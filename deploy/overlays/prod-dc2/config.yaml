@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: multi-cluster-config
+data:
+  index.html: |
+    <html>
+    <body>
+    <h1>PROD-DC2</h1>
+    </body>
+    </html>
