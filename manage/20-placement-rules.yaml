@@ -4,7 +4,7 @@ metadata:
   labels:
     app: mca-dc1
   name: mca-dc1
-  namespace: mca-hub
+  namespace: multi-cluster-app
 spec:
   clusterSelector:
     matchLabels:
@@ -17,7 +17,7 @@ metadata:
   labels:
     app: mca-dc2
   name: mca-dc2
-  namespace: mca-hub
+  namespace: multi-cluster-app
 spec:
   clusterSelector:
     matchLabels:

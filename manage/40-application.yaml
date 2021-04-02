@@ -2,7 +2,7 @@ apiVersion: app.k8s.io/v1beta1
 kind: Application
 metadata:
   name: mca
-  namespace: mca-hub
+  namespace: multi-cluster-app
 spec:
   componentKinds:
     - group: apps.open-cluster-management.io

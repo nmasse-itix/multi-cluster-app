@@ -4,13 +4,12 @@ metadata:
   annotations:
     apps.open-cluster-management.io/git-branch: main
     apps.open-cluster-management.io/git-path: deploy/overlays/prod-dc1
-    apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: mca-dc1
   name: mca-dc1
-  namespace: mca-hub
+  namespace: multi-cluster-app
 spec:
-  channel: mca-hub/multi-cluster-app
+  channel: multi-cluster-app/multi-cluster-app
   placement:
     placementRef:
       kind: PlacementRule
@@ -22,13 +21,12 @@ metadata:
   annotations:
     apps.open-cluster-management.io/git-branch: main
     apps.open-cluster-management.io/git-path: deploy/overlays/prod-dc2
-    apps.open-cluster-management.io/reconcile-option: merge
   labels:
     app: mca-dc2
   name: mca-dc2
-  namespace: mca-hub
+  namespace: multi-cluster-app
 spec:
-  channel: mca-hub/multi-cluster-app
+  channel: multi-cluster-app/multi-cluster-app
   placement:
     placementRef:
       kind: PlacementRule
