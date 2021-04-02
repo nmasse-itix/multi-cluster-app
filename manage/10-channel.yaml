@@ -1,0 +1,8 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: multi-cluster-app
+  namespace: mca-hub
+spec:
+  type: Git
+  pathname: 'https://github.com/nmasse-itix/multi-cluster-app.git'

@@ -1,0 +1,25 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: mca-dc1
+  name: mca-dc1
+  namespace: mca-hub
+spec:
+  clusterSelector:
+    matchLabels:
+      environment: prod
+      availability-zone: dc1
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: mca-dc2
+  name: mca-dc2
+  namespace: mca-hub
+spec:
+  clusterSelector:
+    matchLabels:
+      environment: prod
+      availability-zone: dc2
